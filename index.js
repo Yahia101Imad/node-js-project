@@ -63,3 +63,28 @@ app.get('/index', (req, res) => {
         field: "Petroleum Industry"
     })
 })
+
+// unit 01
+
+console.log("Hi Node")
+console.log(10 + 20)
+
+// unit 02
+
+const math = require('./math')
+console.log(math.sum(3,5))
+
+// process
+console.log(`Current directory: ${__dirname}`)
+console.log(`Current file: ${__filename}`)
+
+// global
+global.myName = 'Imad'
+console.log(myName)
+
+// timing (ex: setTimeout, ...)
+setTimeout(() => {
+    console.log('Generated after 2 seconds')
+},2000)
+
+// unit 03
