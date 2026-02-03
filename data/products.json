@@ -1,0 +1,41 @@
+[
+  {
+    "id": 0,
+    "brand": "Samsung",
+    "model": "Galaxy S23",
+    "price": 950,
+    "currency": "USD",
+    "storage": "256GB",
+    "ram": "8GB",
+    "camera": "50MP",
+    "battery": "3900mAh",
+    "available": true,
+    "image": "samsung_s23.png"
+  },
+  {
+    "id": 1,
+    "brand": "Apple",
+    "model": "iPhone 14",
+    "price": 1100,
+    "currency": "USD",
+    "storage": "128GB",
+    "ram": "6GB",
+    "camera": "12MP",
+    "battery": "3279mAh",
+    "available": false,
+    "image": "iphone_14.png"
+  },
+  {
+    "id": 2,
+    "brand": "Xiaomi",
+    "model": "Redmi Note 12",
+    "price": 280,
+    "currency": "USD",
+    "storage": "128GB",
+    "ram": "6GB",
+    "camera": "48MP",
+    "battery": "5000mAh",
+    "available": true,
+    "image": "redmi_note_12.png"
+  }
+]

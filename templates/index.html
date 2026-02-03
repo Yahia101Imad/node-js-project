@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple Website</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f4f6f8;
+      }
+
+      /* Navbar */
+      nav {
+        background: #222;
+        padding: 15px 30px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #0a7cff;
+      }
+
+      /* Content */
+      .container {
+        padding: 40px;
+      }
+
+      h1 {
+        margin-bottom: 15px;
+      }
+
+      p {
+        color: #555;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <h1>Welcome</h1>
+      <p>{{%CONTENT%}}</p>
+    </div>
+  </body>
+</html>

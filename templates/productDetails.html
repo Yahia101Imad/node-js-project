@@ -1,0 +1,121 @@
+<style>
+  .product-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-header h1 {
+    margin: 0 0 10px;
+    font-size: 26px;
+    color: #222;
+  }
+
+  .product-price {
+    font-size: 22px;
+    color: #0a7cff;
+    font-weight: bold;
+  }
+
+  .product-content {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .product-image {
+    flex: 1;
+    min-height: 250px;
+    background: #e9ecef;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+  }
+
+  .product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .product-info p {
+    margin: 0;
+    color: #555;
+  }
+
+  .status {
+    width: fit-content;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  .available {
+    background: #28a745;
+  }
+
+  .unavailable {
+    background: #dc3545;
+  }
+
+  .product-description {
+    margin-top: 30px;
+  }
+
+  .product-description h3 {
+    margin-bottom: 10px;
+    color: #222;
+  }
+
+  .product-description p {
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .product-content {
+      flex-direction: column;
+    }
+  }
+</style>
+
+<!-- PRODUCT DETAILS MAIN CONTENT -->
+
+<div class="product-wrapper">
+  <!-- Header -->
+  <div class="product-header">
+    <h1>{{%NAME%}}</h1>
+    <div class="product-price">{{%PRICE%}} $</div>
+  </div>
+
+  <!-- Content -->
+  <div class="product-content">
+    <!-- Image -->
+    <div class="product-image">Product Image</div>
+
+    <!-- Info -->
+    <div class="product-info">
+      <p>💾 Storage: {{%STORAGE%}}</p>
+      <p>🧠 RAM: {{%RAM%}}</p>
+      <p>📷 Camera: {{%CAMERA%}}</p>
+      <p>🔋 Battery: {{%BATTERY%}}</p>
+
+      <span class="status available">{{%AVAILABLE%}}</span>
+    </div>
+  </div>
+
+  <!-- Description -->
+  <div class="product-description">
+    <h3>Description</h3>
+    <p>{{%DESCRIPTION%}}</p>
+  </div>
+</div>
